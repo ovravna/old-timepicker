@@ -1,19 +1,17 @@
 <div class="panel panel-default">
 
     <div class="flex-container v-center">
-
+        <!--Showes chosen time in the header of the timepicker-->
         <div class="grow text-center">{{viewTime.format('HH:mm')}}</div>
 
     </div>
 
     <div class="flex-container wrap">
 
+        <!--Iterates over timeUnits and adds a button with the units label in a grid defined by css classes-->
         <button
             ng-repeat="unit in timeUnits"
             class="btn timepicker-hour"
-            ng-class="{
-                active: unit.selected
-            }"
             ng-click="setSelectedTime(unit.time)"
         >{{unit.label}}  </button>
 

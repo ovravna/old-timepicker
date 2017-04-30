@@ -8,14 +8,9 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 
-
-
     <script>
-
+//        creates a angular module without dependencies
         angular.module('demo', [])
-            .controller('demoCtrl', function ($scope) {
-
-            })
 
 
     </script>
@@ -24,20 +19,20 @@
     <link rel="stylesheet" href="timepicker.css">
 
 </head>
-<body ng-app="demo" ng-controller="demoCtrl">
+
+<!--Name of app used, defined in header script-->
+<body ng-app="demo">
 
 
 
 
-<!--<datepicker ng-model="$parent.selectedDate"></datepicker>-->
 
-<!--<input class="form-control" ng-model="date" ng-click="showPicker = !showPicker">-->
-
-<!--<datepicker ng-model="$parent.date" ng-show="showPicker" class="datepicker-popover"></datepicker>-->
-<!--Selected Date: {{selectedDate.toString()}}-->
     <div >
+        <!-- $parent.selectedTime will set all timepickers to the same model.-->
         <timepicker ng-model="selectedTime"></timepicker>
+        <br>
         <timepicker ng-model="selectedTime"></timepicker>
+        <br>
         <timepicker ng-model="selectedTime"></timepicker>
 
     </div>
