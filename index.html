@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Datepicker</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment-with-locales.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+
+
+    <script>
+
+        angular.module('demo', [])
+            .controller('demoCtrl', function ($scope) {
+
+            })
+
+
+    </script>
+
+    <script src="timepicker.js"></script>
+    <link rel="stylesheet" href="timepicker.css">
+
+</head>
+<body ng-app="demo" ng-controller="demoCtrl">
+
+
+
+
+<!--<datepicker ng-model="$parent.selectedDate"></datepicker>-->
+
+<!--<input class="form-control" ng-model="date" ng-click="showPicker = !showPicker">-->
+
+<!--<datepicker ng-model="$parent.date" ng-show="showPicker" class="datepicker-popover"></datepicker>-->
+<!--Selected Date: {{selectedDate.toString()}}-->
+    <div >
+        <timepicker ng-model="selectedTime"></timepicker>
+        <timepicker ng-model="selectedTime"></timepicker>
+        <timepicker ng-model="selectedTime"></timepicker>
+
+    </div>
+
+
+</body>
+</html>

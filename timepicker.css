@@ -1,0 +1,31 @@
+
+.timepicker-hour {
+    flex: 0 0 calc(100% / 4);
+}
+
+timepicker {
+
+    display: block;
+    width: 30rem;
+
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container.wrap {
+    flex-wrap: wrap;
+}
+
+.flex-container.v-center {
+    align-items: center;
+}
+
+.flex-container.space-between {
+    justify-content: space-between;
+}
+
+.flex-container > .grow {
+    flex-grow: 1;
+}

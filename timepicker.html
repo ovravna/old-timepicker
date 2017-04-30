@@ -1,0 +1,23 @@
+<div class="panel panel-default">
+
+    <div class="flex-container v-center">
+
+        <div class="grow text-center">{{viewTime.format('HH:mm')}}</div>
+
+    </div>
+
+    <div class="flex-container wrap">
+
+        <button
+            ng-repeat="unit in timeUnits"
+            class="btn timepicker-hour"
+            ng-class="{
+                active: unit.selected
+            }"
+            ng-click="setSelectedTime(unit.time)"
+        >{{unit.label}}  </button>
+
+
+    </div>
+
+</div>
